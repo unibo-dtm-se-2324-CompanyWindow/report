@@ -8,8 +8,9 @@ nav_order: 1
 # Project title
 
 ### Authors
-- [Giovanni Ciatto](mailto:giovanni.ciatto@unibo.it)
-- [Davide Domini](mailto:davide.domini@unibo.it)
+- [Giuseppe Budano](mailto:giuseppe.budano@studio.unibo.it)
+- [Gloria Montoli](mailto:gloria.montoli@studio.unibo.it)
+- [Francesco Russo](mailto:francesco.russo60@studio.unibo.it)
 
 ## Abstract
 
