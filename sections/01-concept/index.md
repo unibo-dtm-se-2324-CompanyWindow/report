@@ -38,6 +38,7 @@ In the context of the EventStorming process, identifying ***pain points*** is cr
     * Impact: When users cannot easily interpret data or trends, the value of the analysis is compromised, causing misunderstandings or poor decisions by HR teams. A messy interface can discourage users from engaging with the platform at all.
     * Mitigation: Focus on user-centred design principles by creating simple, clean and interactive dashboards. Implement data filtering options, drill-down capabilities, and visual representations (e.g., charts, colour coding) that make complex data easier to digest. Regular user feedback should be incorporated to refine and improve the interface.
 
+
 A ***command*** describes what triggered the event or flow of events, describing the system’s operations. In other word, commands represent actions that are executed to trigger domain events. 
 
 ![Command Visualization](https://github.com/unibo-dtm-se-2324-CompanyWindow/report/blob/main/pictures/EventStorming_CommandVisualization.PNG)
@@ -57,22 +58,24 @@ For example:
     + Actor: HR Manager
     + Event Triggered: Employer Branding Report Created
 
+
 A particular command is executed by an actor in a specific role. ***Actors***:
 
 -	*HR Manager*. Responsible for monitoring employer branding and analysing employee feedback.
 -	*Prospective employee*. A potential candidate looking for real feedback about a company.
 
+
 An automation ***policy*** is a scenario in which an event triggers the execution of a command. An automation policy that triggers the “Return sentiment analysis result” command when the “Analysis of the company is completed” event is observed. 
 Policy, a command that is automatically executed when a specific domain event occurs. 
 
-![Policy Visualization](https://github.com/unibo-dtm-se-2324-CompanyWindow/report/blob/main/pictures/EventStorming_CommandVisualization.PNG)
+![Policy Visualization](https://github.com/unibo-dtm-se-2324-CompanyWindow/report/blob/main/pictures/EventStorming_PolicyVisualization.PNG)
 
 Other examples:
 
-+   Automatic Execution: Once the "Company Name Searched" event occurs, the system automatically triggers data scraping from sources.
-+   Report Generation: After sentiment analysis is complete, the policy triggers the generation of the Employer Branding Report.
++   *Automatic Execution*: Once the "Company Name Searched" event occurs, the system automatically triggers data scraping from sources.
++   *Report Generation*: After sentiment analysis is complete, the policy triggers the generation of the Employer Branding Report.
 
-====
+________________________________________________________________________________
 
 ## **Use Cases Collection**
 
