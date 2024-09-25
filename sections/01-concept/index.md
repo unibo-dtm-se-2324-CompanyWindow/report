@@ -79,3 +79,36 @@ ________________________________________________________________________________
 
 ## **Use Cases Collection**
 
+**Related to functions and tools**
+
+As a user (both company and job seeker), I want to save companies I’m interested in, so that I [can check them all later/I don’t have to search for them again]. 
+
+As a user, I want to filter and order my library according to different criteria, so that I can view company with features that I’m looking for the most. 
+
+**UI/UX** 
+
+As a user, I want an easy and intuitive UI so that I won’t have any problems in using the [software/website/app?] 
+
+**Log in and access** 
+
+As a user, I want an option to log in/register so that I can visualize what I saved in every device. 
+
+As a user, I want to be able to easily sync my app data across multiple devices, so that I can access my information from anywhere. 
+
+**More related to benefits and necessities** 
+
+As a user (HR), I want to see the overall rating given by the company’s employees so that I can understand [what to improve/build an employer branding strategy].  
+
+As a user (HR), I want to see the most used negative words used in reviews so that I can understand how to address the issues.  
+
+As a user (HR), I want to see the most used positive words used in reviews so that I can understand what employees find favorable about the company.  
+
+As a user (HR), I want to see similar companies recommended so that I can check out my competitors.  
+
+As a user (job seeker), I want to see the overall rating given by the company’s employees so that I can choose carefully where to apply. 
+
+As a user (job seeker), I want to see the most used negative words used in reviews so that I can see the potential drawbacks of joining the company.  
+
+As a user (job seeker), I want to see the most used positive words used in reviews so that I can evaluate the potential benefits of joining the company.  
+
+As a user (job seeker), I want to see similar companies recommended so that I can keep my [applying] options open. 
