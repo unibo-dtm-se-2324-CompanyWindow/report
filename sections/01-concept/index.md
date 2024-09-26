@@ -19,7 +19,7 @@ Brainstorm of the domain events related to the business domain – a ***domain e
 
 These events, also known as *"pivotal events"*, define the workflow and effectiveness of the CompanyWindow software.
 
-![Pivotal Events](/imgs/git-flow.pngEventStorming_PivotalEvents.PNG)
+![Pivotal Events](./imgs/EventStorming_PivotalEvents.PNG){style="display: block; margin-left: auto; margin-right: auto; width: 80%;}
 
 In the context of the EventStorming process, identifying ***pain points*** is critical to understanding areas where the process or system may face challenges, inefficiencies or potential failures. Here are a few potential pain points:
 
@@ -42,7 +42,8 @@ In the context of the EventStorming process, identifying ***pain points*** is cr
 
 A ***command*** describes what triggered the event or flow of events, describing the system’s operations. In other word, commands represent actions that are executed to trigger domain events. 
 
-![Command Visualization](/imgs/EventStorming_CommandVisualization.PNG)
+![Command Visualization](./imgs/EventStorming_CommandVisualization.PNG){style="display: block; margin-left: auto; margin-right: auto; width: 60%;}
+
 
 For example:
 
@@ -71,7 +72,7 @@ A particular command is executed by an actor in a specific role. ***Actors***:
 An automation ***policy*** is a scenario in which an event triggers the execution of a command. An automation policy that triggers the “Return sentiment analysis result” command when the “Analysis of the company is completed” event is observed. 
 Policy, a command that is automatically executed when a specific domain event occurs. 
 
-![Policy Visualization](/imgs/EventStorming_PolicyVisualization.PNG)
+![Policy Visualization](./imgs/EventStorming_PolicyVisualization.PNG){style="display: block; margin-left: auto; margin-right: auto; width: 40%;} 
 
 Other examples:
 
@@ -80,40 +81,42 @@ Other examples:
 
 </br>
 
+## **Use Cases**
+
+</br>
+
 ## **Use Cases Collection**
 
 **Related to functions and tools**
 
-As a user (both company and job seeker), I want to save companies I’m interested in, so that I [can check them all later/I don’t have to search for them again]. 
+- As a user (both company and job seeker), I want to save companies I’m interested in, so that I [can check them all later/I don’t have to search for them again]. 
 
-As a user, I want to filter and order my library according to different criteria, so that I can view company with features that I’m looking for the most. 
+- As a user, I want to filter and order my library according to different criteria, so that I can view company with features that I’m looking for the most. 
 
-**UI/UX** 
+*UI/UX* 
+- As a user, I want an easy and intuitive UI so that I won’t have any problems in using the [software/website/app?] 
 
-As a user, I want an easy and intuitive UI so that I won’t have any problems in using the [software/website/app?] 
+*Log in and access*
+- As a user, I want an option to log in/register so that I can visualize what I saved in every device. 
 
-**Log in and access** 
-
-As a user, I want an option to log in/register so that I can visualize what I saved in every device. 
-
-As a user, I want to be able to easily sync my app data across multiple devices, so that I can access my information from anywhere. 
+- As a user, I want to be able to easily sync my app data across multiple devices, so that I can access my information from anywhere. 
 
 </br>
 
 **More related to benefits and necessities** 
 
-As a user (HR), I want to see the overall rating given by the company’s employees so that I can understand [what to improve/build an employer branding strategy].  
+- As a user (HR), I want to see the overall rating given by the company’s employees so that I can understand [what to improve/build an employer branding strategy].  
 
-As a user (HR), I want to see the most used negative words used in reviews so that I can understand how to address the issues.  
+- As a user (HR), I want to see the most used negative words used in reviews so that I can understand how to address the issues.  
 
-As a user (HR), I want to see the most used positive words used in reviews so that I can understand what employees find favorable about the company.  
+- As a user (HR), I want to see the most used positive words used in reviews so that I can understand what employees find favorable about the company.  
 
-As a user (HR), I want to see similar companies recommended so that I can check out my competitors.  
+- As a user (HR), I want to see similar companies recommended so that I can check out my competitors.  
 
-As a user (job seeker), I want to see the overall rating given by the company’s employees so that I can choose carefully where to apply. 
+- As a user (job seeker), I want to see the overall rating given by the company’s employees so that I can choose carefully where to apply. 
 
-As a user (job seeker), I want to see the most used negative words used in reviews so that I can see the potential drawbacks of joining the company.  
+- As a user (job seeker), I want to see the most used negative words used in reviews so that I can see the potential drawbacks of joining the company.  
 
-As a user (job seeker), I want to see the most used positive words used in reviews so that I can evaluate the potential benefits of joining the company.  
+- As a user (job seeker), I want to see the most used positive words used in reviews so that I can evaluate the potential benefits of joining the company.  
 
-As a user (job seeker), I want to see similar companies recommended so that I can keep my [applying] options open. 
+- As a user (job seeker), I want to see similar companies recommended so that I can keep my [applying] options open. 
