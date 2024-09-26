@@ -81,11 +81,122 @@ Other examples:
 
 </br>
 
-## **Use Cases**
+## **Use Cases Collection**
 
 </br>
 
-## **Use Cases Collection**
+![Use Cases Diagram](./imgs/UseCasesDiagramCW.jpg)
+
+
+#### Use Case 1: Search for a company 
+
+Primary Actor: User  
+
+Main Scenario:
+
+1. The user opens the system
+
+2. The user enters the company name in the search bar
+
+3. The user views the page with all the collected data related to the searched company
+
+
+#### Use Case 2: View sentiment analysis results
+
+Primary Actors: Prospective Employee, HR Manager
+
+Description: HR Managers and Prospective Employees review sentiment analysis results to understand the company’s image
+
+Main Scenario:
+
+1. The user is on the page of the searched company
+
+2. The user selects the "Sentiment Analysis" option
+
+3. The system displays the sentiment analysis results
+
+4. The user uses the data to understand the company’s image.
+
+
+#### Use Case 3: Read and filter reviews
+
+Primary Actor: User
+
+Main Scenario:
+
+1. The user accesses the company's page
+
+2. The user selects the "Reviews" section
+
+3. The user selects the filter option
+
+4. The user chooses the desired filters
+
+5. The user clicks on "Apply"
+
+
+#### Use Case 4: Login
+
+Primary Actor: User
+
+Main Scenario:
+
+1. The user navigates to the login page
+
+2. The user enters their username and password
+
+3. The user clicks on the "Login" button
+
+4. The system verifies the credentials
+
+5. The user is logged in and redirected to the main dashboard or homepage
+
+Extensions: 
+- Invalid credentials are entered
+
+- The system displays an error message àThe user is prompted to re-enter his credentials
+
+
+#### Use case 5: saving a company in the library
+
+Actors: subscribe users
+
+Main Scenario:
+
+1. The user opens the application
+
+2. The user logs in with their credentials
+
+3. The user types the name of the company in the search bar
+
+4. The user visualizes the interface with all the data collected
+
+5. The user clicks on “save in the library”
+
+
+#### Use case 6: View all the elements saved in the library
+
+Actors: users
+
+Description: Users can check all the companies they have saved
+
+Main scenario:
+
+1. The user opens the application
+
+2. The user logs in with their credentials
+
+3. The user clicks on “library”
+
+4. The user views all the elements saved
+
+</br>
+
+## **User Stories**
+
+</br>
+
+
 
 **Related to functions and tools**
 
