@@ -16,7 +16,11 @@ Behavior diagrams represent the dynamic aspect of the system.
 
 ### Activity diagram GIUBU
 
-![Activity diagram](./imgs/)
+Activity diagrams are a technique to describe procedural logic, business process, and workflow – they play a role similar to flowcharts, but the principal difference between them and flowchart notation is that they support parallel behavior. 
+
+The activity diagram outlines the key processes and workflows within the CompanyWindow application. It shows the steps taken from when a user searches for a company, through the collection of employee reviews from sources (like Glassdoor or Indeed), to the sentiment analysis of the reviews. The workflow includes steps such as web scraping, data analysis, storing results, and displaying the sentiment and company insights (like pros/cons and overall evaluation) to the user. It also explains the key processes to sign up and to save a company in the user’s personal library.
+
+![Activity diagram](./imgs/Activity%20Diagram%20Search.jpg)
 
 ### State Machine Diagram
 State Machine Diagrams show the different states of an entity. State machine diagrams can also show how an entity responds to various events by changing from one state to another.
@@ -46,8 +50,14 @@ This diagram represents the flow of actions that a user follows when researching
 
 ### Sequence Diagram
 
--
+Company Search Sequence Diagram 
 
+This sequence diagram illustrates the interaction between the user and system components during a company search. It details the process from when a user inputs a company name, to when the system scrapes reviews from external sources, performs sentiment analysis, and presents the data back to the user. The diagram likely includes interactions between the user interface, the web scraper, the sentiment analysis module, and the data storage system, showing how these components communicate in a specific order. 
+
+![Interaction diagram](./imgs/CompanyWindowSequence.jpg)
+
+In this sequence diagram, the interaction between the user and the system components during the registration/login process.
+![Sequence Diagram Login](./imgs/Login%20Sequence%20diagram.jpg)
 ## Structure Diagram Design
 
 -
