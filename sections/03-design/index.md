@@ -68,10 +68,27 @@ In this sequence diagram, the interaction between the user and the system compon
 
 ### Class Diagram
 
+This class diagram represents the CompanyWindow system in which users can search for companies, view reviews and get a sentiment analysis of a specific company. 
+
+In the center of the diagram is the **User class**, which represents the users of the system. Each user has basic information such as email, username, and password, and can log in, register, search for companies, and view sentiment analysis. Then there are two types of users: the ProspectiveEmployee, who could be a job seeker, and the HR Manager, who is the manager of a company and might be interested in how the outside world views the company he works for and also analyze possible competitors.
+
+The **Company class** represents the actual company. Each company has an ID, a name, contact information, the industry in which it operates, and a description. Users can access the company's reviews or see a sentiment analysis based on the opinions left by others.
+
+The **Review class** contains individual reviews left by users, with details such as the author, date, review content, and a score. There is also a method for filtering the reviews.
+
+Then we have the **Sentiment class**, which is responsible for analyzing the reviews and giving a result of the analysis.
+
+![Class diagram](./imgs/ClassDiagramCW.jpg)
 - 
 
 ### Object Diagram
 
+This object diagram shows a simple example of how a user interacts with the CompanyWindow system. It illustrates how a user finds a company, views a review, and sees the sentiment analysis based on that review.
+
+Here we have the user mariorossi who finds the company iTech, which operates in the IT sector. The company has a review written by abarbieri2 on 10/04/2023, where they mention that "the work environment was excellent," giving the company a rating of 4 out of 5.
+Then the system runs a sentiment analysis based on this review, producing an analysis result of 8, which likely indicates a generally positive sentiment.
+
+![Object diagram](./imgs/ObjectDiagramCW.jpg)
 -
 
 
