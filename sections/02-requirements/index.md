@@ -6,15 +6,17 @@ nav_order: 3
 
 # Requirements
 
-- The requirements must explain what the application will have to do. You should not focus on the particular problems, but exclusively on what you want the application to do
+### Goal
+In software development, understanding and managing the system's specifications and requirements is crucial. A clear definition of what the software should do ensures that everyone is on the same page about the project's objectives. The goal is to create a useful and sustainable system that meets user needs and modern standards.
 
-- Goals must be clearly explained
+These functional and non-functional requirements will ensure that CompanyWindow performs its intended functions efficiently, securely and with a focus on user experience.
 
-- Requirements are divided into:
-    - **Functional**: describe the actual behaviour of the application
-    - **Non-functional**: requirements that do not directly concern behavioural aspects, such as safety, performance, etc.
-    - **Implementation**: constrain the entire phase of system realization, for instance by requiring the use of a specific programming language and/or a specific software tool.
+## Functional Requirements
 
-- If there are unclear terms (ambiguous, very complex, etc.) these should be explained
-- Each requirement must have its own acceptance criteria
+
+## Non-Functional Requirements
+
+
+
+
 
