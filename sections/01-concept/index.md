@@ -19,7 +19,7 @@ Brainstorm of the domain events related to the business domain – a ***domain e
 
 These events, also known as *"pivotal events"*, define the workflow and effectiveness of the CompanyWindow software.
 
-![Pivotal Events](./imgs/EventStorming_PivotalEvents.PNG){style="display: block; margin-left: auto; margin-right: auto; width: 80%;}
+![Pivotal Events](./imgs/EventStorming_PivotalEvents.PNG)
 
 In the context of the EventStorming process, identifying ***pain points*** is critical to understanding areas where the process or system may face challenges, inefficiencies or potential failures. Here are a few potential pain points:
 
@@ -42,8 +42,7 @@ In the context of the EventStorming process, identifying ***pain points*** is cr
 
 A ***command*** describes what triggered the event or flow of events, describing the system’s operations. In other word, commands represent actions that are executed to trigger domain events. 
 
-![Command Visualization](./imgs/EventStorming_CommandVisualization.PNG){style="display: block; margin-left: auto; margin-right: auto; width: 60%;}
-
+![Command Visualization](./imgs/EventStorming_CommandVisualization.PNG)
 
 For example:
 
@@ -87,116 +86,111 @@ Other examples:
 
 ![Use Cases Diagram](./imgs/UseCasesDiagramCW.jpg)
 
-
 #### Use Case 1: Search for a company 
 
-Primary Actor: User  
+- Primary Actor: User  
 
-Main Scenario:
+- Main Scenario:
 
-1. The user opens the system
+    1. The user opens the system
 
-2. The user enters the company name in the search bar
+    2. The user enters the company name in the search bar
 
-3. The user views the page with all the collected data related to the searched company
+    3. The user views the page with all the collected data related to the searched company
 
 
 #### Use Case 2: View sentiment analysis results
 
-Primary Actors: Prospective Employee, HR Manager
+- Primary Actors: Prospective Employee, HR Manager
 
-Description: HR Managers and Prospective Employees review sentiment analysis results to understand the company’s image
+- Description: HR Managers and Prospective Employees review sentiment analysis results to understand the company’s image
 
-Main Scenario:
+- Main Scenario:
 
-1. The user is on the page of the searched company
+    1. The user is on the page of the searched company
 
-2. The user selects the "Sentiment Analysis" option
+    2. The user selects the "Sentiment Analysis" option
 
-3. The system displays the sentiment analysis results
+    3. The system displays the sentiment analysis results
 
-4. The user uses the data to understand the company’s image.
+    4. The user uses the data to understand the company’s image.
 
 
 #### Use Case 3: Read and filter reviews
 
-Primary Actor: User
+- Primary Actor: User
 
-Main Scenario:
+- Main Scenario:
 
-1. The user accesses the company's page
+    1. The user accesses the company's page
 
-2. The user selects the "Reviews" section
+    2. The user selects the "Reviews" section
 
-3. The user selects the filter option
+    3. The user selects the filter option
 
-4. The user chooses the desired filters
+    4. The user chooses the desired filters
 
-5. The user clicks on "Apply"
+    5. The user clicks on "Apply"
 
 
 #### Use Case 4: Login
 
-Primary Actor: User
+- Primary Actor: User
 
-Main Scenario:
+- Main Scenario:
 
-1. The user navigates to the login page
+    1. The user navigates to the login page
 
-2. The user enters their username and password
+    2. The user enters their username and password
 
-3. The user clicks on the "Login" button
+    3. The user clicks on the "Login" button
 
-4. The system verifies the credentials
+    4. The system verifies the credentials
 
-5. The user is logged in and redirected to the main dashboard or homepage
+    5. The user is logged in and redirected to the main dashboard or homepage
 
-Extensions: 
-- Invalid credentials are entered
+- Extensions: 
+    - Invalid credentials are entered
 
-- The system displays an error message àThe user is prompted to re-enter his credentials
+    - The system displays an error message àThe user is prompted to re-enter his credentials
 
 
 #### Use case 5: saving a company in the library
 
-Actors: subscribe users
+- Actors: subscribe users
 
-Main Scenario:
+- Main Scenario:
 
-1. The user opens the application
+    1. The user opens the application
 
-2. The user logs in with their credentials
+    2. The user logs in with their credentials
 
-3. The user types the name of the company in the search bar
+    3. The user types the name of the company in the search bar
 
-4. The user visualizes the interface with all the data collected
+    4. The user visualizes the interface with all the data collected
 
-5. The user clicks on “save in the library”
+    5. The user clicks on “save in the library”
 
 
 #### Use case 6: View all the elements saved in the library
 
-Actors: users
+- Actors: users
 
-Description: Users can check all the companies they have saved
+- Description: Users can check all the companies they have saved
 
-Main scenario:
+- Main scenario:
 
-1. The user opens the application
+    1. The user opens the application
 
-2. The user logs in with their credentials
+    2. The user logs in with their credentials
 
-3. The user clicks on “library”
+    3. The user clicks on “library”
 
-4. The user views all the elements saved
+    4. The user views all the elements saved
 
 </br>
 
 ## **User Stories**
-
-</br>
-
-
 
 **Related to functions and tools**
 
