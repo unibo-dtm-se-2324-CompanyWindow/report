@@ -25,7 +25,11 @@ The activity diagram outlines the key processes and workflows within the Company
 ### State Machine Diagram
 State Machine Diagrams show the different states of an entity. State machine diagrams can also show how an entity responds to various events by changing from one state to another.
 
+<<<<<<< HEAD
 ![State Machine Diagram](./imgs/StateMachineDiagram.jpg)
+=======
+![State Machine Diagram](./imgs/StateMachineDiagram.png)
+>>>>>>> 996c06207bfe25f17775f176f5b43686ad57ef0c
  
 The front end of the system can be viewed as an entity that passes through different states. Typically, a user visiting the site starts on the home page, searches for the company they are interested in, waits for the request to be processed, and then views the relevant content. This state flow is shown in yellow in the diagram. These states also interact with other sub-states, such as the backend processing the request and the library page that the user can access.
 
