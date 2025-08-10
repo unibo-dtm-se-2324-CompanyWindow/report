@@ -25,18 +25,14 @@ The activity diagram outlines the key processes and workflows within the Company
 ### State Machine Diagram
 State Machine Diagrams show the different states of an entity. State machine diagrams can also show how an entity responds to various events by changing from one state to another.
 
-<<<<<<< HEAD
-![State Machine Diagram](./imgs/StateMachineDiagram.jpg)
-=======
 ![State Machine Diagram](./imgs/StateMachineDiagram.png)
->>>>>>> 996c06207bfe25f17775f176f5b43686ad57ef0c
  
 The front end of the system can be viewed as an entity that passes through different states. Typically, a user visiting the site starts on the home page, searches for the company they are interested in, waits for the request to be processed, and then views the relevant content. This state flow is shown in yellow in the diagram. These states also interact with other sub-states, such as the backend processing the request and the library page that the user can access.
 
 ### Interaction Overview Diagram 
 The Interaction Overview Diagram (IOD) illustrates the sequence of interactions between different components of the system, focusing on the actions a user can perform while navigating the software. 
 
-![Interaction diagram](./imgs/InteractionDiagram.jpg)
+![Interaction diagram](./imgs/InteractionDiagram.png)
   
 This diagram represents the flow of actions that a user follows when researching a company's information on the platform.
 + *Initial state*: the system is waiting for a user action.
@@ -62,24 +58,82 @@ This sequence diagram illustrates the interaction between the user and system co
 
 In this sequence diagram, the interaction between the user and the system components during the registration/login process.
 ![Sequence Diagram Login](./imgs/Login%20Sequence%20diagram.jpg)
+
 ## Structure Diagram Design
 
--
+Structure diagrams represent the static aspects of the system.  
+(1) It emphasizes the things that must be present in the system being modelled;  
+(2) extensively used in documenting the software architecture of software systems.
+
 
 ### Component diagram 
 
-- 
+![Component Diagram](./imgs/ComponentDiagramCW.jpg)
+
+The architecture depicted in the image is a layered architecture that includes the following components:  
+
+1. **Frontend Layer**  
+   • **React/Vite Application**: Built with React, Vite and TypeScript, this component represents the client-side application. It provides the User Interface (UI) for all user interactions, from submitting search queries to displaying the final reports.  
+
+2. **API Layer**  
+   • **Node.js/Express REST API**: This layer serves as the central communication hub. It's a RESTful API developed with Node.js and the Express.js framework. It handles requests from the frontend, manages user authentication, and orchestrates the backend processing by communicating with the various services.  
+
+3. **Backend Logic Layer**  
+   · **Python Orchestrator (company_analyzer.py)**: This is the core logic component that coordinates the entire analysis workflow. Triggered by the Node.js server, it launches the scraping and sentiment analysis scripts in sequence.  
+   · **Web Scraping Scripts**: These are dedicated Python scripts that dynamically generate URLs to scrape data from external sources like Indeed and Glassdoor. They output the collected data into a structured format for further processing.  
+   · **Sentiment Analysis Script (sentiment.py)**: This script processes the raw data from the scraping scripts. It performs text analysis, generates an AI summary using the Gemini 1.5 API, and creates word cloud images.  
+   · **Database Manager**: Implemented within the Node.js backend, this component is responsible for all operations on the MongoDB database, including storing user information, managing saved searches, and handling notes.  
+
+4. **Data Layer**  
+   · **MongoDB Database**: A NoSQL database that acts as the centralized persistent storage for the application. It stores user profiles, their roles, and all saved searches along with their custom notes.  
+   · **Sentiment Results Directory (data/sentiment_results)**: This is a file-based storage system where the final processed JSON reports and the generated word cloud images are saved, ready to be served to the frontend.  
+
+
+
 
 ### Class Diagram
 
-- 
+![Class Diagram](./imgs/ClassDiagramCW.jpg)
+
+The diagram below shows the CompanyWindow system, which allows users to search for companies, view reviews and get a sentiment analysis of a specific company.  
+
+• This section explains all the details related to the data, for instance:  
+  o Data schema  
+  o Data persistence technologies 
+
+In the center of the diagram is the **User** class, which represents the users of the system. Each user has basic information such as email, username, and password, and can log in, register, search for companies, and view sentiment analysis. Then there are two types of users: the **ProspectiveEmployee**, who could be a job seeker, and the **HR Manager**, who is the manager of a company and might be interested in how the outside world views the company he works for and also analyze possible competitors.  
+
+The **Company** class represents the actual company. Each company has an ID, a name, contact information, the industry in which it operates, and a description. Users can access the company's reviews or see a sentiment analysis based on the opinions left by others.  
+
+The **Review** class contains individual reviews left by users, with details such as the author, date, review content, and a score. There is also a method for filtering the reviews.  
+
+Then we have the **Sentiment** class, which is responsible for analyzing the reviews and giving a result of the analysis.  
+
+
 
 ### Object Diagram
 
--
+![Object Diagram](./imgs/ObjectDiagramCW.jpg)
 
+The object diagram shows a simple example of how a user interacts with the CompanyWindow system. It illustrates how a user finds a company, views a review, and sees the sentiment analysis based on that review.  
+
+Here we have the user **mariorossi** who finds the company **iTech**, which operates in the IT sector. The company has a review written by **abarbieri2** on 10/04/2023, where they mention that "the work environment was excellent," giving the company a rating of 4 out of 5. Then the system runs a sentiment analysis based on this review, producing an analysis result of 8, which likely indicates a generally positive sentiment.  
 
 ## Data-related aspects
-- This section explains all the details related to the data, for instance:
-    - Data schema
-    - Data persistence technologies (if used), for example: MySQL, MongoDB, ...
+
+The system's data schema is designed to support the core functionalities of the application by leveraging the flexibility of a NoSQL database like MongoDB.  
+
+**Data Schema**  
+The database architecture is based on a collection of documents, which is ideal for the heterogeneous nature of the data managed by the system. The main collections are:  
+
+1. **User Data**: This collection stores information related to registered users. Each user document contains profile details and manages the user's role (HR Manager or Prospective Employee), ensuring personalized access to application features.  
+   - *Example Fields*: `userID`, `email`, `password_hash`, `role`, `companyName` (optional for HR Managers).  
+
+2. **Saved Searches**: This collection is the core of the "Saved Searches" functionality. Each document represents a search saved by a user, including the full analysis report and custom notes. This document-based schema is particularly effective for saving the complex JSON-formatted results generated by the backend.  
+   - *Example Fields*: `savedSearchID`, `userID`, `companyName`, `analysisDate`, `aiSummary`, `verage_sentiment_combined`, `wordClouds`, `average_rating`, `indicator_combined`, `word_frequencies_combined`, `pros`, `cons`.  
+
+3. **Sentiment Analysis Results**: The complete analysis reports, generated by the `sentiment.py` script, are saved in a JSON format. While the main data is included in the Saved Searches collection, the final JSON files and word cloud images are stored on disk for easy retrieval by the frontend.  
+
+**Data Persistence Technologies**  
+The application utilizes a single persistence system to maintain a simple and scalable architecture:  
+- **Document Database (MongoDB)**: Used to manage all application data, including structured user data and the semi-structured data of saved searches. Its flexibility allows us to easily adapt the data schema to future requirements without the rigidity of a relational schema.  
