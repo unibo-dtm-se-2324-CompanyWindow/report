@@ -93,31 +93,36 @@ The architecture depicted in the image is a layered architecture that includes t
 
 ### Class Diagram
 
-![Class Diagram](./imgs/ClassDiagramCW.jpg)
+![Class Diagram](./imgs/ClassDiagram.jpg)
 
-The diagram below shows the CompanyWindow system, which allows users to search for companies, view reviews and get a sentiment analysis of a specific company.  
+The diagram below shows the CompanyWindow system, a platform designed to help users explore and evaluate company reputations based on online reviews and sentiment analysis. The structure emphasizes user interaction, data collection, and automated insights.
 
-• This section explains all the details related to the data, for instance:  
-  o Data schema  
-  o Data persistence technologies 
+At the center is the **User** class, which defines the basic attributes and actions of anyone using the platform. It includes fields like `name`, `email`, and `role`, along with methods for logging in, managing profiles, and performing searches. Two subclasses extend this base:
+- **ProspectiveEmployee**: representing individuals exploring employment opportunities
+- **HRManager**: which includes an additional attribute to track the company under management
 
-In the center of the diagram is the **User** class, which represents the users of the system. Each user has basic information such as email, username, and password, and can log in, register, search for companies, and view sentiment analysis. Then there are two types of users: the **ProspectiveEmployee**, who could be a job seeker, and the **HR Manager**, who is the manager of a company and might be interested in how the outside world views the company he works for and also analyze possible competitors.  
+Searches are handled by the **SearchQuery** class, which stores the company name, the user who initiated the search, and the timestamp. This class interacts directly with the **CompanyAnalyzer**, which coordinates the analysis process.
 
-The **Company** class represents the actual company. Each company has an ID, a name, contact information, the industry in which it operates, and a description. Users can access the company's reviews or see a sentiment analysis based on the opinions left by others.  
+To gather data, the system uses the **WebScraper**, which pulls reviews from platforms like Indeed and Glassdoor. These are stored as **Review** objects, each containing details like `rating`, `source`, and `content`.
 
-The **Review** class contains individual reviews left by users, with details such as the author, date, review content, and a score. There is also a method for filtering the reviews.  
+Once the reviews are collected, the **SentimentAnalyzer** processes them to extract meaningful insights. It generates summaries and word clouds, which are saved in **SentimentResult** objects. These results help users quickly understand the general sentiment around a company, including its strengths and weaknesses.
 
-Then we have the **Sentiment** class, which is responsible for analyzing the reviews and giving a result of the analysis.  
+Users can save their searches using the **SavedSearch** class, which links results to the user and allows for personal notes. This makes it easier to revisit and compare companies over time.
 
+In summary, the diagram presents a clear and organized system where each class plays a specific role. The overall design supports a smooth user experience and delivers useful, data-driven insights in a way that’s both accessible and practical.
 
 
 ### Object Diagram
 
-![Object Diagram](./imgs/ObjectDiagramCW.jpg)
+![Object Diagram](./imgs/ObjectDiagram.jpg)
 
-The object diagram shows a simple example of how a user interacts with the CompanyWindow system. It illustrates how a user finds a company, views a review, and sees the sentiment analysis based on that review.  
+This object diagram illustrates the system’s behavior during a typical user interaction. In this scenario, the user `user1:ProspectiveEmployee`, identified as *Mario Rossi*, initiates a search for the company *iTech*. This action is captured by the `search1:SearchQuery` object, which records the company name, the user who made the request, and the timestamp.
 
-Here we have the user **mariorossi** who finds the company **iTech**, which operates in the IT sector. The company has a review written by **abarbieri2** on 10/04/2023, where they mention that "the work environment was excellent," giving the company a rating of 4 out of 5. Then the system runs a sentiment analysis based on this review, producing an analysis result of 8, which likely indicates a generally positive sentiment.  
+The search is handled by the CompanyAnalyzer, which coordinates the data collection process. Two WebScraper objects (`scraper1` and `scraper2`) retrieve reviews from Glassdoor and Indeed. These reviews are stored in `review1` and `review2`, each containing a rating and a brief comment.
+
+The reviews are then analyzed by the SentimentAnalyzer, which produces a comprehensive summary represented by the `result1:SentimentResult` object. This includes an overall sentiment score, average rating, AI-generated summary, and word clouds highlighting frequently mentioned pros and cons.
+
+Overall, the diagram provides a clear view of how different components interact to transform a user’s query into a structured and insightful analysis. It complements the class diagram by showing real instances and their relationships at a specific moment in time.
 
 ## Data-related aspects
 

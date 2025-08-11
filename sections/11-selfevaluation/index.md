@@ -15,7 +15,9 @@ Organization was a key strength: we divided tasks equitably and held weekly, or 
 **Gloria**
 
 The project offered a unique opportunity for me to prove to myself that commitment and studying even highly technical topics are possible. Initially, I encountered several difficulties, particularly in learning how to use GitHub with Visual Studio Code and the terminal. I invested time in understanding these tools, tackling each challenge as a chance for growth, which allowed me to achieve a good final result.
+
 I focused on maintaining clear timelines and assigned tasks, which I believe helped simplify the workflow and make it more efficient for everyone involved. As for my specific responsibilities, I was in charge of the sentiment analysis component, which was one of the three core parts of the project. This involved using generative AI to analyse and interpret the collected reviews. A direct experience with generative AI and its application in a practical context was a significant learning experience.
+
 Working in a group environment with diverse backgrounds also allowed me to learn from the different perspectives and strengths of my teammates. This synergy was essential in addressing coordination challenges and ensuring that the various components of the system integrated cohesively. Through this project, I was able to solidify my skills in managing the team and deepen my understanding of the fundamental IT skills and processes involved, contributing decisively to the achievement of our goals.
 
 **Giuseppe** 
@@ -28,7 +30,7 @@ Ultimately, I resolved this issue by implementing a paid API for data scraping. 
 
 Beyond the technical aspects of my role, this project has taught me a great deal about the broader principles of **software engineering**. I have gained a deeper understanding of the entire software development lifecycle, from initial design and planning to implementation and problem-solving. Furthermore, working in a group environment has been highly educational, helping me navigate the challenges of collaboration, communication, and integrating different components of a larger system. I feel that I have grown significantly as a developer and a team member through this project. 
 
-  **Francesco** 
+**Francesco** 
 
 Working on the CompanyWindow project was a great chance to put into practice what I had learned in my previous studies in computer science. I really enjoyed working with a team that had different backgrounds, this allowed me to approach the project from multiple perspectives and learn from others’ strengths. 
 
