@@ -80,145 +80,117 @@ Other examples:
 
 ## **Use Cases Collection**
 
-A use case can be conceived as a set of scenarios tied together by a common user goal – a scenario is a sequence of steps describing an interaction between a user and a System. So, a use case lists the steps required to achieve a goal from users’ point of view, including the interactions between users and systems. It provides a narrative of how a System is used.
+A **use case** can be conceived as a set of scenarios tied together by a common user goal.  
+A **scenario** is a sequence of steps describing an interaction between a user and a system.  
+A use case lists the steps required to achieve a goal from the user’s point of view, including interactions between users and systems. It provides a narrative of how a system is used.
 
-We'll outline the primary use cases, actors, and their interactions within the system.
+To better understand the functionalities and user interactions within the **CompanyWindow** platform, we created a **use case diagram** and **user stories**.
 
+- **Use case diagram** offers a visual overview of the system’s main features, such as company analysis, account management, and data saving.  
+  It show how different user (authenticated and unauthenticated) interact with these features.
+- **User stories** complement this by focusing on specific goals and motivations.  
+  Written from the user's perspective, they help guide the design of intuitive and meaningful features that respond to real needs.
 
 ![Use Cases Diagram](./imgs/UseCases.jpg)
 
-#### Use Case 1: Search for a company 
-
-- Primary Actor: User  
-
-- Main Scenario:
-
-    1. The user opens the system
-
-    2. The user enters the company name in the search bar
-
-    3. The user views the page with all the collected data related to the searched company
-
-
-#### Use Case 2: View sentiment analysis results
-
-- Primary Actors: Prospective Employee, HR Manager
-
-- Description: HR Managers and Prospective Employees review sentiment analysis results to understand the company’s image
-
-- Main Scenario:
-
-    1. The user is on the page of the searched company
-
-    2. The user selects the "Sentiment Analysis" option
-
-    3. The system displays the sentiment analysis results
-
-    4. The user uses the data to understand the company’s image.
-
-
-#### Use Case 3: Read and filter reviews
-
-- Primary Actor: User
-
-- Main Scenario:
-
-    1. The user accesses the company's page
-
-    2. The user selects the "Reviews" section
-
-    3. The user selects the filter option
-
-    4. The user chooses the desired filters
-
-    5. The user clicks on "Apply"
-
-
-#### Use Case 4: Login
-
-- Primary Actor: User
-
-- Main Scenario:
-
-    1. The user navigates to the login page
-
-    2. The user enters their username and password
-
-    3. The user clicks on the "Login" button
-
-    4. The system verifies the credentials
-
-    5. The user is logged in and redirected to the main dashboard or homepage
-
-- Extensions: 
-    - Invalid credentials are entered
-
-    - The system displays an error message àThe user is prompted to re-enter his credentials
-
-
-#### Use case 5: saving a company in the library
-
-- Actors: subscribe users
-
-- Main Scenario:
-
-    1. The user opens the application
-
-    2. The user logs in with their credentials
-
-    3. The user types the name of the company in the search bar
-
-    4. The user visualizes the interface with all the data collected
-
-    5. The user clicks on “save in the library”
-
-
-#### Use case 6: View all the elements saved in the library
-
-- Actors: users
-
-- Description: Users can check all the companies they have saved
-
-- Main scenario:
-
-    1. The user opens the application
-
-    2. The user logs in with their credentials
-
-    3. The user clicks on “library”
-
-    4. The user views all the elements saved
-
-## **User Stories**
-
-**Related to functions and tools**
-
-- As a user (both company and job seeker), I want to save companies I’m interested in, so that I [can check them all later/I don’t have to search for them again]. 
-
-- As a user, I want to filter and order my library according to different criteria, so that I can view company with features that I’m looking for the most. 
-
-*UI/UX* 
-- As a user, I want an easy and intuitive UI so that I won’t have any problems in using the [software/website/app?] 
-
-*Log in and access*
-- As a user, I want an option to log in/register so that I can visualize what I saved in every device. 
-
-- As a user, I want to be able to easily sync my app data across multiple devices, so that I can access my information from anywhere. 
-
-**More related to benefits and necessities** 
-
-- As a user (HR), I want to see the overall rating given by the company’s employees so that I can understand [what to improve/build an employer branding strategy].  
-
-- As a user (HR), I want to see the most used negative words used in reviews so that I can understand how to address the issues.  
-
-- As a user (HR), I want to see the most used positive words used in reviews so that I can understand what employees find favorable about the company.  
-
-- As a user (HR), I want to see similar companies recommended so that I can check out my competitors.  
-
-- As a user (job seeker), I want to see the overall rating given by the company’s employees so that I can choose carefully where to apply. 
-
-- As a user (job seeker), I want to see the most used negative words used in reviews so that I can see the potential drawbacks of joining the company.  
-
-- As a user (job seeker), I want to see the most used positive words used in reviews so that I can evaluate the potential benefits of joining the company.  
-
-- As a user (job seeker), I want to see similar companies recommended so that I can keep my [applying] options open. 
+## Unauthenticated User Use Cases
+
+### Use Case 1 — Analyze a Company
+- **Actor:** Unauthenticated User  
+- **Description:** The user enters a company name to view sentiment analysis and review insights.  
+- **Precondition:** The user is on the homepage.  
+- **Main Scenario:**
+  1. User enters company name and clicks "Analyze".
+  2. System processes the request and displays analysis results.  
+- **Postcondition:** The user views the company’s sentiment and review summary.
+
+### Use Case 2 — Registration
+- **Actor:** Unauthenticated User  
+- **Description:** The user creates an account to access personalized features.  
+- **Main Scenario:**
+  1. User fills in the registration form with personal details.
+  2. System creates the account.  
+- **Postcondition:** The user becomes authenticated.
+
+### Use Case 3 — Login
+- **Actor:** Unauthenticated User  
+- **Description:** The user logs into the system.  
+- **Main Scenario:**
+  1. User enters email and password.
+  2. System verifies credentials and grants access.  
+- **Postcondition:** The user is authenticated.
+
+---
+
+## Authenticated User Use Cases
+
+### Use Case 4 — Save Search Result
+- **Actor:** Authenticated User  
+- **Description:** The user saves a company analysis for future reference.  
+- **Main Scenario:**
+  1. User clicks "Save" on the analysis page.
+  2. Optionally adds personal notes.  
+- **Postcondition:** The analysis is stored in the user’s library.
+
+### Use Case 5 — View Saved Searches
+- **Actor:** Authenticated User  
+- **Description:** The user accesses previously saved analyses.  
+- **Main Scenario:**
+  1. User navigates to "Saved Searches".
+  2. System displays the list of saved items.  
+- **Postcondition:** The user views saved data.
+
+### Use Case 6 — View and Edit Saved Search Detail
+- **Actor:** Authenticated User  
+- **Description:** The user opens a saved analysis and edits notes.  
+- **Main Scenario:**
+  1. User selects a saved item.
+  2. System displays full analysis and notes.
+  3. User edits and saves notes.  
+- **Postcondition:** Notes are updated.
+
+### Use Case 7 — Manage Account Settings
+- **Actor:** Authenticated User  
+- **Description:** The user updates account information.  
+- **Main Scenario:**
+  1. User accesses account settings.
+  2. Updates email, password, or company (if HR Manager).  
+- **Postcondition:** Account data is updated.
+
+### Use Case 8 — Delete Account
+- **Actor:** Authenticated User  
+- **Description:** The user removes their account from the system.  
+- **Main Scenario:**
+  1. User selects "Delete Account".
+  2. Confirms the action.  
+- **Postcondition:** Account is permanently deleted.
+
+---
+
+## User Stories
+
+### Related to Functions and Tools
+- As a user, I want to save companies I’m interested in, so that I can easily revisit them later without searching again.
+- As a user, I want to view all my saved searches, so that I can revisit previous analyses.
+- As a user, I want to add personal notes to a saved search, so that I can record my thoughts.
+
+### Log In and Access
+- As a user, I want an option to log in/register, so that I can visualize my saved searches on every device.
+- As a user, I want to be able to easily sync my app data across multiple devices, so that I can access my information from anywhere.
+
+### UI/UX
+- As a user, I want a clean and intuitive interface, so that I can navigate the platform without confusion or frustration.
+- As a user, I want to see a loading message while the system processes the analysis, so that I understand something is happening.
+
+### Benefits and Necessities
+- As a user, I want to view a summary, sentiment score, pros and cons, and visual elements, so that I can evaluate the company quickly.
+- As a user (HR), I want to see the overall rating given by the company’s employees, so that I can understand what to improve and build an employer branding strategy.
+- As a user (HR), I want to see the most used negative words in reviews, so that I can address key issues.
+- As a user (HR), I want to see the most used positive words in reviews, so that I can understand what employees find favorable about the company.
+- As a user (Prospective Employee), I want to see the overall rating given by the company’s employees, so that I can choose carefully where to apply.
+- As a user (Prospective Employee), I want to see the most used negative words in reviews, so that I can see potential drawbacks of joining the company.
+- As a user (Prospective Employee), I want to see the most used positive words in reviews, so that I can evaluate the potential benefits of joining the company.
+
+### Account Management
+- As a user, I want to update my email, password, and company (if HR Manager), so that my account stays accurate.
+- As a user, I want to delete my account, so that I can remove my data from the system.
