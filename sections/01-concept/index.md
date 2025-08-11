@@ -1,3 +1,9 @@
+---
+title: Concept
+has_children: false
+nav_order: 1
+---
+
 # **Concept**
 
 In software development and system design, it is essential to use multiple techniques to ensure a deep understanding of user needs and system behaviour. No single approach can address all aspects of a project, which is why we use a combination of methods.
