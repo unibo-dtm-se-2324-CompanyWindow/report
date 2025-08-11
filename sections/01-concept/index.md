@@ -19,7 +19,7 @@ Brainstorm of the domain events related to the business domain – a ***domain e
 
 These events, also known as *"pivotal events"*, define the workflow and effectiveness of the CompanyWindow software.
 
-![Pivotal Events](.\imgs\EventStorming_PivotalEvents.png)
+![Pivotal Events](./imgs/events_storming.png)
 
 In the context of the EventStorming process, identifying ***pain points*** is critical to understanding areas where the process or system may face challenges, inefficiencies or potential failures. Here are a few potential pain points:
 
@@ -42,7 +42,7 @@ In the context of the EventStorming process, identifying ***pain points*** is cr
 
 A ***command*** describes what triggered the event or flow of events, describing the system’s operations. In other word, commands represent actions that are executed to trigger domain events. 
 
-![Command Visualization](.\imgs\EventStorming_CommandVisualization.png)
+![Command Visualization](./imgs/EventStorming_CommandVisualization.png)
 
 For example:
 
@@ -71,7 +71,7 @@ A particular command is executed by an actor in a specific role. ***Actors***:
 An automation ***policy*** is a scenario in which an event triggers the execution of a command. An automation policy that triggers the “Return sentiment analysis result” command when the “Analysis of the company is completed” event is observed. 
 Policy, a command that is automatically executed when a specific domain event occurs. 
 
-![Policy Visualization](.\imgs\EventStorming_PolicyVisualization.png)
+![Policy Visualization](./imgs/policy.png)
 
 Other examples:
 
