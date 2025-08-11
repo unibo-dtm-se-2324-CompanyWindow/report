@@ -44,8 +44,6 @@ In the context of the EventStorming process, identifying ***pain points*** is cr
     * Impact: When users cannot easily interpret data or trends, the value of the analysis is compromised, causing misunderstandings or poor decisions by HR teams. A messy interface can discourage users from engaging with the platform at all.
     * Mitigation: Focus on user-centred design principles by creating simple, clean and interactive dashboards. Implement data filtering options, drill-down capabilities, and visual representations (e.g., charts, colour coding) that make complex data easier to digest. Regular user feedback should be incorporated to refine and improve the interface.
 
-</br>
-
 A ***command*** describes what triggered the event or flow of events, describing the system’s operations. In other word, commands represent actions that are executed to trigger domain events. 
 
 ![Command Visualization](./imgs/actor_command_events.png)
@@ -65,14 +63,10 @@ For example:
     + Actor: HR Manager
     + Event Triggered: Employer Branding Report Created
 
-</br>
-
 A particular command is executed by an actor in a specific role. ***Actors***:
 
 -	*HR Manager*. Responsible for monitoring employer branding and analysing employee feedback.
 -	*Prospective employee*. A potential candidate looking for real feedback about a company.
-
-</br>
 
 An automation ***policy*** is a scenario in which an event triggers the execution of a command. An automation policy that triggers the “Return sentiment analysis result” command when the “Analysis of the company is completed” event is observed. 
 Policy, a command that is automatically executed when a specific domain event occurs. 
@@ -84,14 +78,10 @@ Other examples:
 +   *Automatic Execution*: Once the "Company Name Searched" event occurs, the system automatically triggers data scraping from sources.
 +   *Report Generation*: After sentiment analysis is complete, the policy triggers the generation of the Employer Branding Report.
 
-</br>
-
 ## **Use Cases Collection**
 
-</br>
-
 A use case can be conceived as a set of scenarios tied together by a common user goal – a scenario is a sequence of steps describing an interaction between a user and a System. So, a use case lists the steps required to achieve a goal from users’ point of view, including the interactions between users and systems. It provides a narrative of how a System is used.
-</br> 
+
 We'll outline the primary use cases, actors, and their interactions within the system.
 
 
@@ -199,8 +189,6 @@ We'll outline the primary use cases, actors, and their interactions within the s
 
     4. The user views all the elements saved
 
-</br>
-
 ## **User Stories**
 
 **Related to functions and tools**
@@ -216,8 +204,6 @@ We'll outline the primary use cases, actors, and their interactions within the s
 - As a user, I want an option to log in/register so that I can visualize what I saved in every device. 
 
 - As a user, I want to be able to easily sync my app data across multiple devices, so that I can access my information from anywhere. 
-
-</br>
 
 **More related to benefits and necessities** 
 

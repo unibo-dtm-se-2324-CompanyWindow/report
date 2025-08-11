@@ -77,8 +77,6 @@ This automated process would remove manual version management and provide a **cl
 
 > ⚠️ Due to project constraints, full automation was not implemented, but remains the intended strategy.
 
-</br>
-
 # Implementation details
 
 At the core of this architecture is a central orchestrator module that coordinates the entire data processing pipeline, from data acquisition to sentiment analysis, and delivers results back to the user in an efficient and structured manner.

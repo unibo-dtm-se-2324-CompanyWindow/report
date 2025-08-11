@@ -4,10 +4,19 @@ has_children: false
 nav_order: 12
 ---
 
-# Self-evaluation
-**Gloria** 
+# Team-evaluation
 
-This project allowed me to prove to myself that commitment and studying even highly technical topics is possible. I had initial difficulties learning how to use GitHub in Visual Studio Code and the terminal, but I was able to achieve a good result. This, combined with the constant support of the team, made the project's success possible. I believe my focus on maintaining clear timelines and assigned tasks helped to simplify the workflow, making it more efficient for everyone involved. 
+The team worked effectively and cohesively throughout the project. The group's composition proved to be optimal, thanks to the diverse skills and knowledge that each member brought to the table. This allowed us to cover a wide range of technical and organizational competencies.
+Despite the geographical distance and remote work setup, we managed to establish clear deadlines and meet them, demonstrating great flexibility. We successfully handled periods of heavy workload by pausing the project and then resuming it with renewed focus and effectiveness.
+Organization was a key strength: we divided tasks equitably and held weekly, or monthly as needed, update meetings. This approach ensured gradual progress and unanimous action, keeping everyone aligned on goals and the status of the work.
+
+# Self-evaluation 
+
+**Gloria**
+
+The project offered a unique opportunity for me to prove to myself that commitment and studying even highly technical topics are possible. Initially, I encountered several difficulties, particularly in learning how to use GitHub with Visual Studio Code and the terminal. I invested time in understanding these tools, tackling each challenge as a chance for growth, which allowed me to achieve a good final result.
+I focused on maintaining clear timelines and assigned tasks, which I believe helped simplify the workflow and make it more efficient for everyone involved. As for my specific responsibilities, I was in charge of the sentiment analysis component, which was one of the three core parts of the project. This involved using generative AI to analyse and interpret the collected reviews. A direct experience with generative AI and its application in a practical context was a significant learning experience.
+Working in a group environment with diverse backgrounds also allowed me to learn from the different perspectives and strengths of my teammates. This synergy was essential in addressing coordination challenges and ensuring that the various components of the system integrated cohesively. Through this project, I was able to solidify my skills in managing the team and deepen my understanding of the fundamental IT skills and processes involved, contributing decisively to the achievement of our goals.
 
 **Giuseppe** 
 

@@ -25,7 +25,6 @@ Users must be able to efficiently find and manage information related to compani
 The system must ensure secure and controlled access to its features. This is managed through user registration and login (FR4.1), a role-based access control system (FR4.2), account management features for updating user information (FR4.3), and a personal library for saved searches (FR4.4).
 
 --- 
-</br>
 
 The Requirement Breakdown Structure (RBS) provides a hierarchical view of the functional requirements, detailing how the main requirements are broken down into more granular sub-requirements.
 
@@ -44,7 +43,6 @@ Non-functional requirements specify criteria used to judge the operation of a sy
 - **NFR7: Maintainability**: The codebase should follow clean coding standards and be well-documented, with a modular architecture allowing independent component updates.
 - **NFR8: Cross-Platform Support**: The application must work seamlessly across multiple devices and platforms, including desktops, tablets, and mobile devices, with a responsive design.
 
-</br>
 
 # Implementation Requirements (IRs)
 
