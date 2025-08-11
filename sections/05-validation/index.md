@@ -88,13 +88,33 @@ python -m pytest --cov=. --cov-report=term
 
 This executed 10 tests, all of which passed successfully in 46.00 seconds.   
 
-The total code coverage for the project was measured at **78%**.   
+The total code coverage for the project was measured at **78%**.  
 
- 
+**Node.js (backend)**
 
+To run the test suite, use the following command:
 
+```bash
+npm test
+```
 
- 
+Or, for more detailed output including coverage:
+
+```bash
+npm run test:coverage
+```
+
+A total of **95 tests** were executed across **8 suites**, all passing successfully in **7.16 seconds**.
+
+The project achieved an average code coverage of approximately **85%**, including:
+
+- **Statements:** 84.29%
+- **Branches:** 84.31%
+- **Functions:** 85.36%
+- **Lines:** 84.84%
+
+> Coverage is measured using **Jest** with built-in support for coverage reporting
+
 
 ## Acceptance Test   
 
