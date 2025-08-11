@@ -42,7 +42,7 @@ In the context of the EventStorming process, identifying ***pain points*** is cr
 
 A ***command*** describes what triggered the event or flow of events, describing the system’s operations. In other word, commands represent actions that are executed to trigger domain events. 
 
-![Command Visualization](./imgs/EventStorming_CommandVisualization.png)
+![Command Visualization](./imgs/actor_command_events.png)
 
 For example:
 
