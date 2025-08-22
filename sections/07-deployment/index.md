@@ -66,13 +66,9 @@ npm install
 
 cd .. 
 
- 
-
 # Install Python dependencies for the data analysis scripts 
 
 pip install -r requirements.txt 
-
- 
 
 # Install Node.js dependencies for the frontend 
 
@@ -181,8 +177,6 @@ With all dependencies and environment variables configured, you can start the ba
 cd server 
 
 npm start 
-
- 
 
 # In a separate terminal, start the React development server 
 

@@ -53,17 +53,13 @@ Implementation requirements specify the technical and architectural decisions cr
 - **IR3: Sentiment Analysis Implementation**: Use natural language processing techniques to perform sentiment analysis and opinion mining.
 - **IR4: Frontend User Interface**: Build the web interface using React and TypeScript with the Vite build tool. Tailwind CSS will be used for styling to ensure a clean and responsive design.
 
-</br>
-
 # Conditions of Satisfaction (CoS)
 
 These describe the primary implications and complexities involved in realizing a specific requirement.
 
 - **CoS for FR1 (Data Collection)**: Requires continuous maintenance and adaptation to changes in target website structures. It involves managing IP rotation and CAPTCHA handling for reliable data acquisition.
 - **CoS for FR2 (Sentiment Analysis)**: Demands significant computational resources for natural language processing model training and inference. Requires ongoing model refinement to adapt to evolving language and domain-specific terminology.
-- **CoS for NFR1 (Performance)**: Implies continuous monitoring and optimization of database queries, API endpoints, and data processing pipelines to meet stringent response time targets under load.
-
-</br> 
+- **CoS for NFR1 (Performance)**: Implies continuous monitoring and optimization of database queries, API endpoints, and data processing pipelines to meet stringent response time targets under load. 
 
 # Acceptance Criteria (AC)
 

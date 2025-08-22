@@ -14,7 +14,7 @@ Behavior diagrams represent the dynamic aspect of the system.
 1.	It emphasizes what must happen in the system being modeled 
 2.	extensively used to describe the functionality of software systems
 
-### Activity diagram GIUBU
+### Activity diagram
 
 Activity diagrams are a technique to describe procedural logic, business process, and workflow – they play a role similar to flowcharts, but the principal difference between them and flowchart notation is that they support parallel behavior. 
 
