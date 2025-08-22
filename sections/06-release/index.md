@@ -23,11 +23,10 @@ Currently, the project is running locally. For setup and execution details, refe
 
 ## License  
 
-The CompanyWindow project is released under the **Apache License 2.0**.  
+The CompanyWindow project is released under the **MIT License**.
 
-This license was chosen for its balance of freedom and legal protection. It allows users to freely use, modify, and distribute the software for both private and commercial purposes. At the same time, it provides a strong legal framework that protects the original creators by requiring that a copy of the license and any changes made to the code are clearly documented.  
+This license was chosen for its simplicity and permissiveness, which makes it particularly suitable for academic and research projects. It allows anyone to freely use, modify, and distribute the software with minimal restrictions, requiring only that the copyright notice and license are preserved.This choice facilitates learning, collaboration, and reuse of the project, while keeping the legal framework lightweight and easy to understand.
 
-This choice encourages community contributions and collaboration while maintaining the integrity and legal clarity of the project. The Apache License 2.0 also includes an explicit grant of patent rights, which further reduces the risk of legal disputes in open-source collaborations.  
 
 ## Choice of the Versioning Schema  
 
