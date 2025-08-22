@@ -76,9 +76,9 @@ Our testing process was based on a combination of unit testing and integration t
 
  
 
-### Test Coverage Result   
+## Test Coverage Result   
 
-**Python scripts**   
+### **Python scripts**   
 
 The command used to run the tests and calculate coverage was:   
 ```python
@@ -90,7 +90,7 @@ This executed 10 tests, all of which passed successfully in 46.00 seconds.
 
 The total code coverage for the project was measured at **78%**.  
 
-**Node.js (backend)**
+### **Node.js (backend)**
 
 To run the test suite, use the following command:
 
@@ -106,14 +106,26 @@ npm run test:coverage
 
 A total of **95 tests** were executed across **8 suites**, all passing successfully in **7.16 seconds**.
 
-The project achieved an average code coverage of approximately **85%**, including:
+### **Frontend** 
 
-- **Statements:** 84.29%
-- **Branches:** 84.31%
-- **Functions:** 85.36%
-- **Lines:** 84.84%
+To run the frontend test suite, use the following command:
 
-> Coverage is measured using **Jest** with built-in support for coverage reporting
+```bash
+npm test
+```
+
+Or, for more detailed output including coverage:
+
+```bash
+npm run test:coverage
+```
+A total of 69 tests were executed across 12 test files, all passing successfully.
+
+### **Test Coverage Result**
+
+The project achieved an average code coverage of approximately **57%**.
+
+> Coverage is measured using **Vitest** and **React Testing** with built-in support for coverage reporting.
 
 
 ## Acceptance Test   
