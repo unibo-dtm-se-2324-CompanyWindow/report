@@ -5,7 +5,7 @@ has_children: false
 nav_order: 1
 ---
 
-# Project title
+# CompanyWindow
 
 ### Authors
 - [Giuseppe Budano](mailto:giuseppe.budano@studio.unibo.it)
