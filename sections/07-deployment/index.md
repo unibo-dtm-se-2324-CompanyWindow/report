@@ -13,7 +13,7 @@ To run the CompanyWindow application, you need the following tools installed on 
 
  
 
- - **Node.js**: Version 20.11 or later is required for the backend server. 
+ * **Node.js**: Version 20.11 or later is required for the backend server. 
 
  * **Python**: Version 3.8 or later is needed for the data analysis scripts. 
 
@@ -79,11 +79,8 @@ npm install
 cd .. 
 ``` 
 
- 
 
 #### 3rd Step: Get Your API Keys and create a MongoDB Atlas Instance  
-
- 
 
 Before you can run the application with live data, you'll need to obtain free API keys for the scraping and sentiment analysis services. 
 
@@ -104,8 +101,6 @@ Before you can run the application with live data, you'll need to obtain free AP
 
 * **How to Create a MongoDB Atlas Instance** 
 
- 
-
     If you choose to use a cloud-hosted database, MongoDB Atlas is the recommended option. Here are the steps to create a free instance: 
     1.  **Sign Up**: Go to the MongoDB Atlas website and sign up for a free account. 
     2.   **Create a Project**: Once logged in, create a new project. 
@@ -120,8 +115,6 @@ Before you can run the application with live data, you'll need to obtain free AP
 
 #### 4th Step: Configure Environment Variables 
 
- 
-
 This is a critical step for configuring both the backend and the Python scripts. Sensitive information like API keys and database credentials must be set in `.env` files. 
 
  
@@ -130,29 +123,26 @@ This is a critical step for configuring both the backend and the Python scripts.
 
 
 ``` 
-    NODE_ENV=development 
+NODE_ENV=development 
 
-    PORT=3000 
-
+PORT=3000 
     MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/database_name 
 
- 
 
-    # JWT Secret and Expiration 
+# JWT Secret and Expiration 
 
-    JWT_SECRET=your_secret_jwt_key 
+JWT_SECRET=your_secret_jwt_key 
 
-    JWT_EXPIRE=1h 
+JWT_EXPIRE=1h 
 
- 
 
-    # Configuration for Python Scripts 
+# Configuration for Python Scripts 
 
-    USE_MOCK=true 
+USE_MOCK=true 
 
-    SCRAPFLY_API_KEY=your_scrapfly_api_key 
+SCRAPFLY_API_KEY=your_scrapfly_api_key 
 
-    GEMINI_API_KEY=your_gemini_api_key 
+GEMINI_API_KEY=your_gemini_api_key 
 ``` 
 
  
@@ -176,11 +166,11 @@ With all dependencies and environment variables configured, you can start the ba
 
 cd server 
 
-npm start 
+npm run dev #or node index.js 
 
 # In a separate terminal, start the React development server 
 
-cd ../client 
+cd client 
 
 npm run dev 
 ``` 
