@@ -106,27 +106,36 @@ npm run test:coverage
 
 A total of **95 tests** were executed across **8 suites**, all passing successfully in **7.16 seconds**.
 
+The project achieved an average code coverage of approximately **85%**, including:
+
+- **Statements:** 84.29%
+- **Branches:** 84.31%
+- **Functions:** 85.36%
+- **Lines:** 84.84%
+
+> Coverage was measured using **Jest** with built-in support for coverage reporting
+
 ### **Frontend** 
 
-To run the frontend test suite, use the following command:
+To run the frontend test suite, use:
 
 ```bash
 npm test
 ```
 
-Or, for more detailed output including coverage:
+or, for coverage reporting:
 
 ```bash
 npm run test:coverage
 ```
-A total of 69 tests were executed across 12 test files, all passing successfully.
 
-### **Test Coverage Result**
+The testing focused on the **core features** of the interface, including the search functionality, key UI elements, authentication forms and the saved searches management.
 
-The project achieved an average code coverage of approximately **57%**.
+Less relevant sections, such as detailed account management pages, were not covered to avoid unnecessary complexity, since they are not essential to the project’s main goals.
 
-> Coverage is measured using **Vitest** and **React Testing** with built-in support for coverage reporting.
+The frontend test suite achieved an overall coverage of approximately **57%**.
 
+> Coverage was measured using **Vitest** and **React Testing Library**
 
 ## Acceptance Test   
 
